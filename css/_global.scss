@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(---darkblue);
+    font-weight: 600;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 14px;
+}
+p{
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(---grey); 
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    padding: 70px 0;
+}
+
+.section-heading h4{
+    color: var(---blue);
+    font-size: 24px;
+    margin: 1rem 0;        
+}
+.container{
+    width: 90%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.center{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .section-content{
+        width: 100%;
+    }
+    p{
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+.flex-img{
+    flex-basis: 45%;
+}
+.rd-edges{
+    border-radius: 10px;
+
+}
+.border-secondary{
+    border-radius: 8px;
+    box-shadow: 0 0 0 7px var(---orange);
+}
+.flex-txt{
+    flex-basis: 45%;
+}
+
+
+
+
+.image-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.2s linear;
+    }
+}
+
+
+
+
+%btn{
+    border:none;
+    border-radius: 2.5px;
+    font-weight:500;
+    padding: 0.8rem 1.8rem;
+    outline: none;
+    font-weight: 400;
+}
+
+.btn-lg{
+    @extend %btn;
+    padding: 1rem 2.5rem;
+}
+
+.btn-primary{
+    @extend %btn;
+    font-size: 16px;
+    background-color: var(---blue);
+    color:white;
+}
+
+.btn-secondary{
+    @extend %btn;
+    font-size: 16px;
+    background-color: var(---orange);
+    color: var(---dark-color);
+}
+

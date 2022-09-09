@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wee Landing Page</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+
+
+    <script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/slick.min.js"></script>
+    <script defer src="./js/custom.slick.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="brand">
+                        <span class="logo"><img src="images/Logo.svg"></span>
+                    </div>
+                    <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" aria-expanded="false"  id="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                    </button>
+                    <div class="nav-list" id="navbarNav">
+                        <ul>
+                            <li class="nav-list-item"><a href="./index.html" class="nav-link">Home</a></li>
+                            <li class="nav-list-item"><a href="./index.html" class="nav-link">Services <span class="iconify" data-icon="ant-design:down-outlined"></span></a></li>
+                            <li class="nav-list-item"><a href="./index.html" class="nav-link">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-buttons">
+                        <select>
+                            <option>EN</option>
+                            <option>FR</option>
+                        </select>
+                        <button class="btn btn-secondary">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Bringing it<br>Together</h1>
+                        <p>Connecting you to a world of a fast<br>growing community</p>
+
+                        <div class="hero-form">
+                            <form action="">
+                                <label id="city"><span class="iconify" data-icon="entypo:location-pin"></span></label>
+                                <input type="text" placeholder="City" name="city">
+                                <input type="text" placeholder="Location" name="location">
+                                <input type="submit" value="Schedule Visit" class="btn-secondary" name="submit">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hero-image">     
+                            <img src="images/header_image.png" alt="">
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <section id="services-list">
+            <div class="container">
+                <div class="services-content">
+                    <div class="services-list service-slider">
+                        <div class="services-list-item">
+                            <div class="service">
+                                <div class="service-icon">
+                                 <img src="images/operator.png">
+                                </div>
+                                <div class="service-text">
+                                    <h3>Consulting</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>             
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-list-item">
+                            <div class="service">
+                                <div class="service-icon">
+                                    <img src="images/vector.png">
+                                </div>
+                                <div class="service-text">
+                                    <h3>Design</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>             
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-list-item">
+                            <div class="service">
+                                <div class="service-icon">
+                                    <img src="images/promotion.png">
+                                </div>
+                                <div class="service-text">
+                                    <h3>Marketing</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>             
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-list-item">
+                            <div class="service">
+                                <div class="service-icon">
+                                    <img src="images/technical-support.png">
+                                </div>
+                                <div class="service-text">
+                                    <h3>Management</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="service-section">
+            <div class="container">
+                <div class="service-wrap flex-card">
+                    <div class="service-image flex-card-image">
+                        <div class="image-container border-secondary">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1618085219724-c59ba48e08cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                        </div>
+                    </div>
+                    <div class="service-text flex-card-text">
+                        <div class="section-heading">
+                            <h4>Services</h4>
+                        </div>
+                        <h2>Solutions designed for <br> all your needs</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="btn-lg btn-primary">See More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vision-section">
+            <div class="container">
+                <div class="vision-wrap">
+                    <div class="vision-text">
+                        <div class="section-heading">
+                            <h4>Services</h4>
+                        </div>  
+                        <div class="content-txt">
+                            <h2>Our Vision in Creating Something</h2>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="inter-txt">
+                                <div class="d-flex">
+                                    <div class="row">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                                    </div>
+                                    <div class="row">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-lg btn-primary">Explore More</button> 
+                        </div>    
+                    </div>
+                    <div class="vision-image">
+                        <div class="image-container image-one">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                        <div class="image-container image-two">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="">
+                        </div>
+                        <div class="image-container image-three">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="solution-section">
+            <div class="container">
+                <div class="solution-wrap flex-card">
+                    <div class="solution-text flex-card-text">
+                        <div class="section-heading">
+                            <h4>Solutions</h4>
+                        </div>
+                        <h2>Providing First-Class Business Services</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button class="btn-lg btn-primary">See Availability</button>
+                    </div>
+                    <div class="solution-image flex-card-image">
+                        <div class="image-container border-secondary">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio-section">
+            <div class="center">
+                <div class="section-heading">
+                    <h4>Projects</h4>
+                </div>
+                <div class="section-content">
+                    <div class="content-heading">
+                        <h2>Great Floor Services</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam,</p>
+                    <div class="content-body">
+                        <div class="projects-filter">
+                        </div>
+                        <div class="projects-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimony">
+            <div class="center">
+                <div class="section-heading">
+                    <h4>Review</h4>
+                </div>
+                <div class="section-content">
+                    <div class="content-heading">
+                        <h2>What Our Clients Say</h2>
+                    </div>
+                    <div class="content-body testimony-slider">
+                        <div class="testimonies">
+                            <div class="card">
+                                <div class="card-image image-container border-secondary">
+                                    <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                                </div>
+                                <div class="card-tags">
+                                    <h3>Mike Connell</h3>
+                                    <span class="title">Business Man</span>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonies">
+                            <div class="card">
+                                <div class="card-image image-container border-secondary">
+                                    <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                                </div>
+                                <div class="card-tags">
+                                    <h3>Mike Connell</h3>
+                                    <span class="title">Business Man</span>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonies">
+                            <div class="card">
+                                <div class="card-image image-container border-secondary">
+                                    <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                                </div>
+                                <div class="card-tags">
+                                    <h3>Mike Connell</h3>
+                                    <span class="title">Business Man</span>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonies">
+                            <div class="card">
+                                <div class="card-image image-container border-secondary">
+                                    <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                                </div>
+                                <div class="card-tags">
+                                    <h3>Mike Connell</h3>
+                                    <span class="title">Business Man</span>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonies">
+                            <div class="card">
+                                <div class="card-image image-container border-secondary">
+                                    <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                                </div>
+                                <div class="card-tags">
+                                    <h3>Mike Connell</h3>
+                                    <span class="title">Business Man</span>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-brand">
+                        <div class="logo"><span class="logo"><img src="images/logo_white.png"></span></div>
+                        <p>Junction Business Centre, 1st Floor Sqaq Lourdes, St Julians STJ3334, Malta</p>
+                            <div class="social-plaforms">
+                                <ul class="social-icons">
+                                    <li><a><span class="iconify" data-icon="foundation:social-twitter"></span></a></li>
+                                    <li><a><span class="iconify" data-icon="brandico:facebook"></span></a></li>
+                                    <li><a><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+                                    <li><a><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="footer-list">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="index.html">Our Work</a></li>
+                            <li><a href="index.html">Our Clients</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="index.html">Contact</a></li>
+                             <li><a href="index.html">Payment</a></li>
+                             <li><a href="index.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyrite">
+                    <span>©Wee. All Rights Reserved.</span>
+                </div>
+                <div class="privacy">
+                    Privacy Policy
+                </div>
+                <div class="terms">
+                    Terms of Condition
+                </div>
+            </div>
+        </footer>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="72" viewBox="0 0 111 72">
+  <g id="Logo" transform="translate(-3.397 0.221)">
+    <g id="Group_5" data-name="Group 5" transform="translate(3.397 -0.221)">
+      <text id="WEE" transform="translate(0 52)" fill="#008ced" font-size="48" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">WEE</tspan></text>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="18" cy="18" r="18" transform="translate(6 36)" fill="#fff"/>
+    </g>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="12" cy="12" r="12" transform="translate(90.397 5.779)" fill="#ffb703"/>
+  </g>
+</svg>

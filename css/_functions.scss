@@ -1,0 +1,56 @@
+
+// Template Mixins
+
+@mixin backgroundImage($image) {
+
+    background: $image;
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flexBox($wrap:nowrap,$direction:row,$justify:flex-start,$align:stretch) {
+
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@mixin break($length...) {
+
+    @if length($length) == 1{
+
+        @media (max-width: nth($length,1)) {
+
+            @content
+            
+        }
+    } 
+
+    @if length($length) == 2{
+
+        @media (max-width: nth($length,1)) and (min-width: nth($length,2)) {
+
+            @content
+            
+        }
+    }
+}
+
+
+// Custom Mixins
+
+
+@mixin imageRotate($height, $degrees) {
+
+    img{
+        transform: $degrees;
+    }
+    
+    height: $height;
+
+    
+}
