@@ -490,17 +490,18 @@ header{
 
 footer{
     background-color: var(---blue);
+    color: white;
     width: 100%;
-    min-height: 500px;
-    color: var(---white);
-    @include backgroundImage(url('../images/footer_background.svg'));
+    // min-height: 500px;
+    // color: var(---white);
+    // @include backgroundImage(url('../images/footer_background.svg'));
 
 }
 
 .footer-wrap{
-    padding: 200px 0 0;
+    padding: 70px 0 0;
     width: 100%;
-    min-height: 500px;
+    // min-height: 500px;
     @include flexBox($wrap:wrap,$justify:space-between);
 
     .footer-brand{

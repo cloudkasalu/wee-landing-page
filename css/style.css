@@ -571,19 +571,13 @@ header .hero-image img {
 
 footer {
   background-color: var(---blue);
+  color: white;
   width: 100%;
-  min-height: 500px;
-  color: var(---white);
-  background: url("../images/footer_background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .footer-wrap {
-  padding: 200px 0 0;
+  padding: 70px 0 0;
   width: 100%;
-  min-height: 500px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
