@@ -50,7 +50,7 @@
             </div>
         </nav>
         <header class="hero">
-            <div class="container">
+            <div class="hero-wrapper">
                 <div class="hero-content">
                     <div class="hero-text">
                         <h1>Bringing it<br>Together</h1>
@@ -74,7 +74,7 @@
         <section id="services-list">
             <div class="container">
                 <div class="services-content">
-                    <div class="services-list service-slider">
+                    <div class="services-list">
                         <div class="services-list-item">
                             <div class="service">
                                 <div class="service-icon">
@@ -144,10 +144,10 @@
         </section>
         <section id="vision-section">
             <div class="container">
-                <div class="vision-wrap">
-                    <div class="vision-text">
+                <div class="vision-wrap d-flex">
+                    <div class="vision-text flex-card-text">
                         <div class="section-heading">
-                            <h4>Services</h4>
+                            <h4>Vision</h4>
                         </div>  
                         <div class="content-txt">
                             <h2>Our Vision in Creating Something</h2>
@@ -171,8 +171,12 @@
                             <button class="btn-lg btn-primary">Explore More</button> 
                         </div>    
                     </div>
-                    <div class="vision-image">
-                        <div class="image-container image-one">
+                    <div class="vision-image flex-card-image">
+                        <div class="image-container">
+                            <img class="rd-edges" src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="">
+                        </div>
+                        
+                        <!-- <div class="image-container image-one">
                             <img class="rd-edges" src="https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                         </div>
                         <div class="image-container image-two">
@@ -180,7 +184,7 @@
                         </div>
                         <div class="image-container image-three">
                             <img class="rd-edges" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -206,7 +210,7 @@
             </div>
         </section>
         <section id="portfolio-section">
-            <div class="center">
+            <div class="container center">
                 <div class="section-heading">
                     <h4>Projects</h4>
                 </div>
@@ -214,8 +218,8 @@
                     <div class="content-heading">
                         <h2>Great Floor Services</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam,</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam,</p> -->
                     <div class="content-body">
                         <div class="projects-filter">
                         </div>
@@ -255,7 +259,7 @@
                                 <div class="card-tags">
                                     <h3>Mike Connell</h3>
                                     <span class="title">Business Man</span>
-                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "</p>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +271,7 @@
                                 <div class="card-tags">
                                     <h3>Mike Connell</h3>
                                     <span class="title">Business Man</span>
-                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                    <p>"Consetetur sadipscing elitrnumy sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +283,7 @@
                                 <div class="card-tags">
                                     <h3>Mike Connell</h3>
                                     <span class="title">Business Man</span>
-                                    <p>"Consetetur sadipscing elitrnumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
+                                    <p>"Consetetur sadipscing elitrnumy eirmod sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita "</p>
                                 </div>
                             </div>
                         </div>
@@ -333,14 +337,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="copyrite">
-                    <span>©Wee. All Rights Reserved.</span>
-                </div>
-                <div class="privacy">
-                    Privacy Policy
-                </div>
-                <div class="terms">
-                    Terms of Condition
+                <div class="container">
+                    <div class="bottom-wrapper">
+                        <div class="copyrite">
+                            <span>©Wee. All Rights Reserved.</span>
+                        </div>
+                        <div class="privacy-terms">
+                            <span>Privacy Policy</span>
+                            <span>  Terms of Condition</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </footer>

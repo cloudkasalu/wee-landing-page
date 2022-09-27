@@ -41,13 +41,13 @@ const projects = [
         image:
           'https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg',
       },
-      {
-        id: '4',
-        title: 'high-back bench',
-        category: 'market',
-        image:
-          'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-      },
+      // {
+      //   id: '4',
+      //   title: 'high-back bench',
+      //   category: 'market',
+      //   image:
+      //     'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      // },
   ];
 
 

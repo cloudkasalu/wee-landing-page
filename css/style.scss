@@ -5,6 +5,18 @@
 @import "functions";
 @import "global";
 
+
+@keyframes fadeInRight {
+
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
 .hamburger{
     background: none;
     border: none;
@@ -21,12 +33,7 @@
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
       }
-    //   &[aria-expanded="true"]{
-    //     .line{
-    //         // border-radius: 0px;
-    //     }
-    //   }
-      
+
       &:hover{
         cursor: pointer;
       }
@@ -85,14 +92,15 @@
 
 
 nav{
-    position: absolute;
+    position: fixed;
+    z-index: 999;
     width: 100%;
     background-color: var(---white);
 }
 
 
 .brand{
-    flex-basis: 35%;
+    max-width: 35%;
 
     .logo img{
         width: 100px;
@@ -110,6 +118,11 @@ nav{
 
     .hamburger{
         display: none;
+    }
+
+    .nav-buttons{
+        display: flex;
+        justify-content: center;
     }
 
     @include break(768px){
@@ -192,10 +205,19 @@ nav{
 
 header{
     width: 100%;
-    height: fit-content;
+    max-width: 1440px;
+    height: 100vh;
+    margin: auto;
     position: relative;
+    overflow: hidden;
     z-index: -2;
-    // @include backgroundImage(url('../images/header_background.svg'));
+
+    .hero-wrapper{
+        width: 95%;
+        height: 100%;
+        margin-left: auto;
+        padding-right: 2rem;
+    }
 
     @include break(768px){
         .hero-image{
@@ -207,7 +229,8 @@ header{
 
     .hero-content{
         width: 100%;
-        min-height: 750px;
+        height: 100%;
+        padding-top: 10%;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -227,7 +250,9 @@ header{
             border-radius: 2.5px;
 
             form{
-                @include flexBox($align:center, $justify:center);
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 label{
                     margin-left: 0.5rem;
@@ -254,12 +279,14 @@ header{
                     vertical-align: middle;
                 }
 
+                @include break(768px){
+                    flex-wrap: wrap;
+                }
+            
+
             }
 
-            @include break(768px){
-                flex-wrap: wrap;
-            }
-        
+            
         
         }
     }
@@ -268,10 +295,8 @@ header{
         flex-basis:80%;
         position: relative;
         width: 100%;
-        height: 520px;
         transform: translateX(50px);
         img{
-            position: absolute;
             width: auto;
             max-width: none;
             height: 520px;
@@ -283,26 +308,45 @@ header{
 
 
 .services-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .service{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
+    .services-list-item{
+        margin-bottom: 2rem;
+        padding-top: 4rem;
 
-        .service-icon{
-            @include flexBox($justify:center);
-            width: 100%;
-            min-height: 100px;
-            img{
-                width: auto;
-                height: 80px;
+        .service{
+            max-width: 300px;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+    
+            .service-icon{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                min-height: 70px;
+                img{
+                    width: auto;
+                    height: 80px;
+                }
+            }
+            .service-text{
+                margin-top: 1rem
             }
         }
-        .service-text{
-            margin-top: 1rem
-        }
     }
+
+    @include break(500px){
+        flex-wrap: wrap;
+    }
+    
 }
 
 
@@ -312,12 +356,14 @@ header{
 }
 
 .flex-card{
-    @include flexBox($wrap:wrap, $justify:space-around, $align: center);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
     .flex-card-image, .flex-card-text{
         flex-basis: 45%;
         margin-top: 3rem;
-
         .image-container{
             width: 400px;
             height: 450px;
@@ -336,7 +382,15 @@ header{
 
 
 .vision-wrap{
-    @include flexBox($justify:space-between);
+
+    .vision-text, .vision-image{
+        flex-basis: 45%;
+    
+    }
+
+    .vision-text{
+        animation: 2s ease-out both;
+    }
 
     @include break(768px){
         flex-direction: column;
@@ -345,50 +399,25 @@ header{
             order: 1;
         }
     }
-}
 
-.vision-text, .vision-image{
-    flex-basis: 45%;
 
 }
 
 
-.vision-image{
-    position: relative;
-    flex-basis: 45%;
 
-    img{
-        transform: scale(1.3);
-    }
-    .image-one{
-        width: 30%;
-        height: 150px;
-        left: 20%;
-        position: absolute;
-        
-    }
-    .image-two{
-        width: 40%;
-        height: 200px;
-        right: 0;
-        z-index: 999;
-        top: 20%;
-        position: absolute;
-        
-    }
-    .image-three{
-        width: 70%;
-        height: 200px;
-        position: absolute;
-        bottom: 0;
-        
-    }
+.content-body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: justify;
+    transition: all .3s ease-in-out;
 }
 
 
 
 .projects-filter{
-    margin-top: 2rem;
+    flex-basis: 20%;
     margin-bottom: 1rem;
 
     .cat-btn{
@@ -402,33 +431,41 @@ header{
         color: var(---blue);
         background-color: var(---lightgrey-color);
         font-size: 16px;
+        margin-bottom: 1rem;
     
     }
+
+    @include break(1024px){
+
+        display: flex;
+        }
 
     @include break(768px){
 
     margin: 0.5rem 1rem;
     width: 100%; 
     padding: 1rem;
-    height: 50px;
     font-size: 16px;
+    display: flex;
     }
 }
 
 .projects-container{
-    display: flex;
-    max-width: 1400px;
-    max-width: 100%;
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    max-width: 960px;
+    padding: 0 1rem;
     overflow: hidden;
     margin: auto;
+
     
     .project{
     display: flex;
     padding: 1rem;
-    margin: 1rem;
     width: 100%;
-    min-width: 25%;
-    max-width: 250px;
+    min-width: 100%;
     height: 270px;
     border-radius: 15px;
     background-color: #000000;
@@ -452,11 +489,23 @@ header{
         }
 
     }
+
+    
+
+    @include break(960px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include break(500px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 .testimonies{
     .card{
         max-width: 700px;
+        min-height: 400px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -468,12 +517,12 @@ header{
         
 
         .card-image{
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             border-radius: 100%;
-            margin-top: 2rem;
+            margin-top: 1rem;
             margin-bottom: 1rem;
-            box-shadow: 0 0 0 5px var(---orange);
+            box-shadow: 0 0 0 4px var(---orange);
             img{
                 border-radius: 100%;
             }
@@ -492,16 +541,12 @@ footer{
     background-color: var(---blue);
     color: white;
     width: 100%;
-    // min-height: 500px;
-    // color: var(---white);
-    // @include backgroundImage(url('../images/footer_background.svg'));
 
 }
 
 .footer-wrap{
     padding: 70px 0 0;
     width: 100%;
-    // min-height: 500px;
     @include flexBox($wrap:wrap,$justify:space-between);
 
     .footer-brand{
@@ -580,26 +625,16 @@ footer{
 
 
 .footer-bottom{
-    padding: 1rem 0;
     background-color: darken($blue,2%);
+}
+
+.bottom-wrapper{
+    padding: 1rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
-
-
-// .copyrite{
-
-//     p{
-//         color: white;
-    
-//     }
-// }
-
-// .privacy, .terms{
-//     flex-basis: 15%;
-// }
 
 
 
