@@ -402,14 +402,7 @@ header .hero-content p {
   color: var(---grey-color);
 }
 header .hero-content h1 {
-  width: 100%;
-  overflow: hidden;
-  border-right: 2px solid;
-  white-space: nowrap;
-  margin: 0 auto;
   font-size: 3.5rem;
-  -webkit-animation: typing 3s steps(20) infinite alternate-reverse, blinking 5s steps(1) infinite;
-          animation: typing 3s steps(20) infinite alternate-reverse, blinking 5s steps(1) infinite;
 }
 header .hero-content .hero-form {
   background-color: var(---lightgrey-color);
