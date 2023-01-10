@@ -10,7 +10,7 @@
     <link href="css/slick.css" rel="stylesheet">
 
 
-    <script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script defer src="js/app.js"></script>
     <script defer src="./js/jquery.min.js"></script>
     <script defer src="./js/slick.min.js"></script>
@@ -26,15 +26,21 @@
                         <span class="logo"><img src="images/Logo.svg"></span>
                     </div>
                     <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" aria-expanded="false"  id="hamburger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                        <iconify-icon icon="ic:round-menu"></iconify-icon>
                     </button>
                     <div class="nav-list" id="navbarNav">
                         <ul>
                             <li class="nav-list-item"><a href="./index.html" class="nav-link">Home</a></li>
-                            <li class="nav-list-item"><a href="./index.html" class="nav-link">Services <span class="iconify" data-icon="ant-design:down-outlined"></span></a></li>
-                            <li class="nav-list-item"><a href="./index.html" class="nav-link">About Us</a></li>
+                            <li class="nav-list-item dropdown"><a  class="nav-link">Services<iconify-icon icon="ic:baseline-keyboard-arrow-down"></iconify-icon></a>
+                                <div class="dropdown-container">
+                                    <ul class="dropdown-list">
+                                        <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
+                                        <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
+                                        <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-list-item"-><a href="./index.html" class="nav-link">About Us</a></li>
                         </ul>
                     </div>
                     <div class="nav-buttons">
@@ -66,7 +72,7 @@
                         </div>
                     </div>
                     <div class="hero-image">     
-                            <img src="images/header_image-min.png" alt="">
+                            <img src="images/header_image-min.png" alt="woman pointing at chart">
                     </div> 
                 </div>
             </div>
@@ -125,18 +131,18 @@
         </section>
         <section id="service-section">
             <div class="container">
-                <div class="service-wrap flex-card">
+                <div class="flex-card">
                     <div class="service-image flex-card-image">
-                        <div class="image-container border-secondary">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1618085219724-c59ba48e08cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
-                        </div>
+                        <img src="./images/Sec 1 image.png" alt="woman in office">
                     </div>
                     <div class="service-text flex-card-text">
                         <div class="section-heading">
                             <h4>Services</h4>
                         </div>
                         <h2>Solutions designed for <br> all your needs</h2>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
                         <button class="btn-lg btn-primary">See More</button>
                     </div>
                 </div>
@@ -144,7 +150,7 @@
         </section>
         <section id="vision-section">
             <div class="container">
-                <div class="vision-wrap d-flex">
+                <div class="vision-wrap flex-card">
                     <div class="vision-text flex-card-text">
                         <div class="section-heading">
                             <h4>Vision</h4>
@@ -156,14 +162,14 @@
                             <div class="inter-txt">
                                 <div class="d-flex">
                                     <div class="row">
-                                        <h5>Lorem ipsum</h5>
+                                        <h4>Lorem ipsum</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
 
-                                        <h5>Lorem ipsum</h5>
+                                        <h4>Lorem ipsum</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                                     </div>
                                     <div class="row">
-                                        <h5>Lorem ipsum</h5>
+                                        <h4>Lorem ipsum</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                                     </div>
                                 </div>
@@ -172,19 +178,7 @@
                         </div>    
                     </div>
                     <div class="vision-image flex-card-image">
-                        <div class="image-container">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="">
-                        </div>
-                        
-                        <!-- <div class="image-container image-one">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                        </div>
-                        <div class="image-container image-two">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="">
-                        </div>
-                        <div class="image-container image-three">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                        </div> -->
+                        <img src="./images/Sec 2 image.png" alt="office images collage">
                     </div>
                 </div>
             </div>
@@ -202,9 +196,7 @@
                         <button class="btn-lg btn-primary">See Availability</button>
                     </div>
                     <div class="solution-image flex-card-image">
-                        <div class="image-container border-secondary">
-                            <img class="rd-edges" src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                        </div>
+                        <img src="./images/Sec 3 image.png" alt="workers in office presentation">
                     </div>
                 </div>
             </div>

@@ -1,19 +1,16 @@
-*{
+*, *::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
 body{
-    font-family: 'Poppins', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1,h2,h3,h4,h5{
     color: var(---darkblue);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h1{
@@ -21,7 +18,7 @@ h1{
     margin-bottom: 2rem;
 }
 h2{
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -40,7 +37,7 @@ p{
     line-height: 1.5;
     font-weight: 400;
     margin-bottom: 1rem;
-    color: var(---grey-color); 
+    color: var(---grey); 
 }
 a{
     color: white;
@@ -178,3 +175,40 @@ section{
     }
 }
 
+
+@media (max-width:1024px) {
+
+    
+}
+
+@media (max-width:786px) {
+    h1{
+        font-size: 42px;
+    }
+    h2{
+        font-size: 32px;
+
+    }
+
+    
+}
+@media (max-width:480px) {
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+
+    }
+    
+}

@@ -41,16 +41,4 @@
 }
 
 
-// Custom Mixins
 
-
-@mixin imageRotate($height, $degrees) {
-
-    img{
-        transform: $degrees;
-    }
-    
-    height: $height;
-
-    
-}
