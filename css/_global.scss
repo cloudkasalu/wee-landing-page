@@ -52,12 +52,15 @@ img{
 }
 
 section{
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .section-heading h4{
     color: var(---blue);
-    font-size: 21px;
+    @media (min-width:1024px) {
+        font-size: 21px;
+                    
+      }
     margin: .8rem 0;       
 }
 .container{
@@ -184,6 +187,7 @@ section{
 @media (max-width:786px) {
     h1{
         font-size: 42px;
+        margin-bottom: 1rem;
     }
     h2{
         font-size: 32px;

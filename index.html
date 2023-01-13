@@ -31,16 +31,17 @@
                     <div class="nav-list" id="navbarNav">
                         <ul>
                             <li class="nav-list-item"><a href="./index.html" class="nav-link">Home</a></li>
-                            <li class="nav-list-item dropdown"><a  class="nav-link">Services<iconify-icon icon="ic:baseline-keyboard-arrow-down"></iconify-icon></a>
-                                <div class="dropdown-container">
+                            <li class="nav-list-item dropdown" data-dropdown>
+                                <button data-dropdown-button class="nav-link">Services<iconify-icon icon="ic:baseline-keyboard-arrow-down"></iconify-icon></button>
+                                <div class="dropdown-menu">
                                     <ul class="dropdown-list">
-                                        <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
+                                        <li class="nav-list-item"><a href="www.google.com">Dropdown Link</a></li>
                                         <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
                                         <li class="nav-list-item"><a href="/">Dropdown Link</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-list-item"-><a href="./index.html" class="nav-link">About Us</a></li>
+                            <li class="nav-list-item"><a href="./index.html" class="nav-link">About Us</a></li>
                         </ul>
                     </div>
                     <div class="nav-buttons">
@@ -64,10 +65,13 @@
 
                         <div class="hero-form">
                             <form action="">
-                                <label id="city"><span class="iconify" data-icon="entypo:location-pin"></span></label>
-                                <input type="text" placeholder="City" name="city">
-                                <input type="text" placeholder="Location" name="location">
-                                <input type="submit" value="Schedule Visit" class="btn-secondary" name="submit">
+                                <label id="city">
+                                    <input type="text" placeholder="City" name="city">
+                                </label>
+                                <label for="location">
+                                    <input type="text" placeholder="Location" name="location">
+                                </label>
+                                <button class="btn-secondary" name="submit">Schedule Visit</button>
                             </form>
                         </div>
                     </div>
