@@ -171,8 +171,8 @@ section {
   transition: all 0.3s ease-in;
 }
 .btn-primary:hover {
-  background: none;
-  color: var(---blue);
+  background: #007dd4;
+  border: 2px solid #007dd4;
 }
 
 .btn-secondary {
@@ -183,7 +183,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .btn-secondary:hover {
-  background: none;
+  background: #e9a600;
+  border: 2px solid #e9a600;
 }
 
 @media (max-width: 786px) {

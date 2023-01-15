@@ -157,8 +157,8 @@ section{
     transition: all .3s ease-in;
 
     &:hover{
-        background: none;
-        color: var(---blue);
+        background: darken($color: $blue, $amount: 5%);
+        border: 2px solid  darken($color: $blue, $amount: 5%);
         
     }
 }
@@ -173,7 +173,8 @@ section{
     transition: all .3s ease-in-out;
 
     &:hover{
-        background: none;
+        background: darken($color: $orage, $amount: 5%);
+        border: 2px solid  darken($color: $orage, $amount: 5%);
         
     }
 }
