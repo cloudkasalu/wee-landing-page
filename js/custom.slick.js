@@ -29,12 +29,12 @@ $(document).ready(function(){
 
 
     $(document).ready(function(){
-      $('.testimony-slider').slick({infinite: true,slidesToShow: 3,variableWidth: false,autoplay: true,autoplaySpeed: 2000,arrows: false,speed: 900,
+      $('.testimony-slider').slick({infinite: true,slidesToShow: 3.5,variableWidth: false,autoplay: true,autoplaySpeed: 2000,arrows: false,speed: 900,
       responsive: [
         {
           breakpoint: 992,
           settings: {
-            slidesToShow: 4
+            slidesToShow: 2.5
           }
         },
         {
